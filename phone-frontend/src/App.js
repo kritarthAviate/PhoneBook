@@ -30,8 +30,15 @@ function App() {
           </>
         ) : (
           <>
-            <span onClick={signOut}>
-              <a href="#">Sign out</a>
+            <span
+              onClick={signOut}
+              style={{
+                textDecoration: "underline",
+                cursor: "pointer",
+                color: "-webkit-link",
+              }}
+            >
+              Sign out
             </span>
             <Switch>
               <Route path="/add-number">
